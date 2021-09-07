@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-image: url(../../images/bg-intro-mobile.png);
+  background-size: contain;
+  background-color: var(--red);
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url(../../images/bg-intro-desktop.png);
+    background-size: cover;
+  }
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+.container {
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 24px;
+  padding: 0 auto;
+  width: 90%;
+  max-width: 32.8rem;
+  height: 56.6rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 376px) {
+  .container {
+    width: 90%;
+    max-width: 45rem;
+    min-height: 70rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0px;
+  line-height: 1.6;
+  color: var(--Text-grey);
+}
+/*# sourceMappingURL=style.css.map */
