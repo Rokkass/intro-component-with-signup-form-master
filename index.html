@@ -18,10 +18,10 @@
     .attribution {
       position: absolute;
       bottom: 0px;
+      left: 0;
+      right: 0;
       font-size: 11px;
       text-align: center;
-
-
     }
 
     .attribution a {
@@ -44,23 +44,23 @@
     <div class="form-wrapper">
       <form>
         <div class="input-wrapper">
-          <input type="text" name="firstName" class="input-firstName" placeholder="First Name">
+          <input type="text" name="firstName" class="input input-firstName" placeholder="First Name">
           <label for="name" class=>First name cannot be empty</label>
           <div class="error-icon"></div>
         </div>
         <div class="input-wrapper">
-          <input type="text" name="lastName" class="input-lastName" placeholder="Last Name">
+          <input type="text" name="lastName" class="input input-lastName" placeholder="Last Name">
           <label for="lastName">Last name cannot be empty</label>
           <div class="error-icon"></div>
         </div>
         <div class="input-wrapper">
-          <input type="email" name="email" class="input-email" placeholder="Email Address">
-          <label for="emal">Looks like this is not an email</label>
+          <input type="email" name="email" class="input input-email" placeholder="Email Address">
+          <label for="email">Looks like this is not an email</label>
           <div class="error-icon"></div>
         </div>
         <div class="input-wrapper">
-          <input type="password" name="password" class="input-password" placeholder="Password">
-          <label for="password">Password cannot be empty</label>
+          <input type="password" name="password" class="input input-password" placeholder="Password">
+          <label for="password">Password must be strong</label>
           <div class="error-icon"></div>
         </div>
         <button type="submit" class="submit-form">Claim your free trial</button>
@@ -71,6 +71,7 @@
       </p>
     </div>
   </div>
+  <div class="confirmation slideUp">The form has been sent</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Michał Sroka</a>.

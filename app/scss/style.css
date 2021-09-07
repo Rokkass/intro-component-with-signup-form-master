@@ -68,7 +68,7 @@ body {
 .left-side {
   width: 87.2%;
   text-align: center;
-  padding-top: 5.2rem;
+  padding-top: 7rem;
 }
 
 @media (min-width: 1001px) {
@@ -201,7 +201,7 @@ body {
 
 form {
   width: 86%;
-  padding: 2rem 0;
+  padding: 3.5rem 0;
 }
 
 .input-wrapper {
@@ -265,8 +265,41 @@ label {
   right: 1rem;
 }
 
+.confirmation {
+  background-color: var(--green);
+  width: 50%;
+  min-width: 22rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-box-shadow: 0rem 0rem 1rem 0.2rem var(--darker-green);
+          box-shadow: 0rem 0rem 1rem 0.2rem var(--darker-green);
+  position: fixed;
+  top: -4rem;
+}
+
+@media (min-width: 1001px) {
+  .confirmation {
+    position: absolute;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    top: -2rem;
+    left: 25%;
+  }
+}
+
 .redBorder {
   border: 1px solid var(--red);
+}
+
+.redFont {
+  color: var(--red);
 }
 
 .display {
@@ -275,6 +308,16 @@ label {
 
 .displaynt {
   opacity: 0;
+}
+
+.slideUp {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+}
+
+.slideDown {
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
 }
 
 h1,
